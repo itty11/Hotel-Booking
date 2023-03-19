@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Room Booking</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Hotel Room Booking</a>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-4">Available Rooms</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Room Type</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="room-list">
+            <!-- Room list will be populated dynamically using jQuery -->
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">Cart</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Room Type</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="cart-list">
+            <!-- Cart list will be populated dynamically using jQuery -->
+          </tbody>
+        </table>
+        <div class="mt-4">
+          <form id="booking-form">
+            <h3 class="mb-4">Booking Details</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
